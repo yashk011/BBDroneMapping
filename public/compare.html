@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Map Compare</title>
+		<!-- Bootstrap -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="assets/css/isotope.css" media="screen" />
+		<link rel="stylesheet" href="assets/css/style.css">
+
+	
+	   <link rel="stylesheet" href="src/plugins/L.Control.Zoomslider.css">
+	   <link rel="stylesheet" href="src/plugins/leaflet-draw/leaflet.draw.css"/>
+
+
+	   <link rel="stylesheet" href="src/leaflet.css">
+        <link rel="stylesheet" href="src/css/bootstrap.css">
+        <link rel="stylesheet" href="src/plugins/L.Control.Pan.css">
+        <link rel="stylesheet" href="src/plugins/L.Control.Zoomslider.css">
+        <link rel="stylesheet" href="src/plugins/L.Control.MousePosition.css">
+        <link rel="stylesheet" href="src/plugins/L.Control.Sidebar.css">
+        <link rel="stylesheet" href="src/plugins/Leaflet.PolylineMeasure.css">
+        <link rel="stylesheet" href="src/plugins/easy-button.css">
+        <link rel="stylesheet" href="src/plugins/leaflet-opencage/src/css/L.Control.OpenCageSearch.css">
+        <link rel="stylesheet" href="src/plugins/leaflet-styleeditor/css/Leaflet.StyleEditor.css">
+
+		<script src="src/leaflet-src.js"></script>
+        <script src="src/jquery-3.2.0.min.js"></script>
+        <script src="src/plugins/L.Control.MousePosition.js"></script>
+        <script src="src/plugins/L.Control.Sidebar.js"></script>
+        <script src="src/plugins/Leaflet.PolylineMeasure.js"></script>
+        <script src="src/plugins/easy-button.js"></script>
+        <script src="src/plugins/leaflet-providers.js"></script>
+        <script src="src/plugins/leaflet-styleeditor/javascript/Leaflet.StyleEditor.js"></script>
+        <script src="src/plugins/leaflet-styleeditor/javascript/Leaflet.StyleForms.js"></script>
+        <script src="src/plugins/leaflet.ajax.min.js"></script>
+        <script src="src/plugins/leaflet.sprite.js"></script>
+        <script src="src/plugins/leaflet.awesome-markers.min.js"></script>
+        <script src="src/plugins/leaflet-mapkey/L.Icon.Mapkey.js"></script>
+        <script src="src/plugins/leaflet.markercluster.js"></script>
+        <script src="src/jquery-ui.min.js"></script>
+        
+		
+
+		<!-- Load Leaflet from CDN-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
+
+		<!-- Load Esri Leaflet from CDN -->
+		<script src="https://unpkg.com/esri-leaflet@2.0.8"></script>
+
+		<!-- Load Esri Leaflet Geocoder from CDN -->
+		<link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.4/dist/esri-leaflet-geocoder.css">
+		<script src="https://unpkg.com/esri-leaflet-geocoder@2.2.4"></script>
+
+        <!-- Leaflet Mouse Position -->
+        <link rel="stylesheet" href="assets/plugins/mouseposition/L.Control.MousePosition.css">
+        <script src="assets/plugins/mouseposition/L.Control.MousePosition.js"></script>
+
+        <!-- Leaflet Basemaps Plugin -->
+        <link rel="stylesheet" href="assets/plugins/basemaps/L.Control.Basemaps.css">
+        <script src="assets/plugins/basemaps/L.Control.Basemaps.js"></script>
+
+        <!-- Leaflet Measure Plugin -->
+        <link rel="stylesheet" href="assets/plugins/measure/leaflet-measure.css">
+        <script src="assets/plugins/measure/leaflet-measure.js"></script>
+
+        <!-- Leaflet Measure Plugin -->
+        <link rel="stylesheet" href="assets/plugins/awesomemarkers/leaflet.awesome-markers.css">
+        <script src="assets/plugins/awesomemarkers/leaflet.awesome-markers.js"></script>
+        
+<!--    ***************  Begin Leaflet.Draw-->
+<script src="scripts/leaflet.label.js"></script>
+
+<script src="src/plugins/leaflet-draw/Leaflet.draw.js"></script>
+<script src="src/plugins/leaflet-draw/Leaflet.Draw.Event.js"></script>
+<link rel="stylesheet" href="src/plugins/leaflet-draw/leaflet.draw.css"/>
+
+<script src="src/plugins/leaflet-draw/Toolbar.js"></script>
+<script src="src/plugins/leaflet-draw/Tooltip.js"></script>
+
+<script src="src/plugins/leaflet-draw/ext/GeometryUtil.js"></script>
+<script src="src/plugins/leaflet-draw/ext/LatLngUtil.js"></script>
+<script src="src/plugins/leaflet-draw/ext/LineUtil.Intersect.js"></script>
+<script src="src/plugins/leaflet-draw/ext/Polygon.Intersect.js"></script>
+<script src="src/plugins/leaflet-draw/ext/Polyline.Intersect.js"></script>
+<script src="src/plugins/leaflet-draw/ext/TouchEvents.js"></script>
+
+<script src="src/plugins/leaflet-draw/draw/DrawToolbar.js"></script>
+<script src="src/plugins/leaflet-draw/draw/handler/Draw.Feature.js"></script>
+<script src="src/plugins/leaflet-draw/draw/handler/Draw.SimpleShape.js"></script>
+<script src="src/plugins/leaflet-draw/draw/handler/Draw.Polyline.js"></script>
+<script src="src/plugins/leaflet-draw/draw/handler/Draw.Circle.js"></script>
+<script src="src/plugins/leaflet-draw/draw/handler/Draw.Marker.js"></script>
+<script src="src/plugins/leaflet-draw/draw/handler/Draw.Polygon.js"></script>
+<script src="src/plugins/leaflet-draw/draw/handler/Draw.Rectangle.js"></script>
+
+
+<script src="src/plugins/leaflet-draw/edit/EditToolbar.js"></script>
+<script src="src/plugins/leaflet-draw/edit/handler/EditToolbar.Edit.js"></script>
+<script src="src/plugins/leaflet-draw/edit/handler/EditToolbar.Delete.js"></script>
+
+<script src="src/plugins/leaflet-draw/Control.Draw.js"></script>
+
+<script src="src/plugins/leaflet-draw/edit/handler/Edit.Poly.js"></script>
+<script src="src/plugins/leaflet-draw/edit/handler/Edit.SimpleShape.js"></script>
+<script src="src/plugins/leaflet-draw/edit/handler/Edit.Circle.js"></script>
+<script src="src/plugins/leaflet-draw/edit/handler/Edit.Rectangle.js"></script>
+<script src="src/plugins/leaflet-draw/edit/handler/Edit.Marker.js"></script>
+
+<!--    **************  End of Lealet Draw-->
+
+     
+		<style type="text/css">
+			body {
+				margin: 0;
+				background-color: #242424;
+			}
+			.map {
+				margin-top: 0px;
+				position: fixed;
+				height: 93%;
+				width: 50%;
+			}
+			.leaflet-container .leaflet-control-mouseposition {
+				left: 100px;
+				bottom: -32px;
+			}
+
+		</style>
+    </head>
+    <body>
+	
+
+		<div class="row">
+			
+				<div id="map-div-1" class="col-md-12" style="height: 700px">
+				</div>
+		</div>
+	
+
+		
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.isotope.min.js"></script>
+		<script src="assets/js/fancybox/jquery.fancybox.pack.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/functions.js"></script>
+		<script src="src/plugins/L.Control.Zoomslider.js"></script>
+
+
+	  
+
+
+		<script src="assets/js/map.js"></script>
+
+		<script type="text/javascript">new WOW().init();</script>
+		
+
+		
+
+	</body>
+</html>

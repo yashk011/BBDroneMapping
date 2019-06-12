@@ -1,7 +1,6 @@
 {
   "name": "fyle_bank",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,5 +17,15 @@
     "lodash": "^4.17.11",
     "mongodb": "^2.2.5",
     "mongoose": "^4.5.9"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashk011/BBDroneMapping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yashk011/BBDroneMapping/issues"
+  },
+  "homepage": "https://github.com/yashk011/BBDroneMapping#readme",
+  "description": ""
 }

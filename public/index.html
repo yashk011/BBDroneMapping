@@ -25,7 +25,7 @@
         <script src="src/plugins/leaflet-opencage/src/js/L.Control.OpenCageSearch.js"></script>
         <script src="src/plugins/leaflet-styleeditor/javascript/Leaflet.StyleEditor.js"></script>
         <script src="src/plugins/leaflet-styleeditor/javascript/Leaflet.StyleForms.js"></script>
-
+        <script src="src/plugins/leaflet.measurecontrol.js"></script>
 <!--    ***************  Begin Leaflet.Draw-->
 
         <script src="src/plugins/leaflet-draw/Leaflet.draw.js"></script>
@@ -191,6 +191,9 @@
                 });
                 ctlDraw.addTo(mymap);
 
+              
+                // var measureControl = new L.Control.Measure();
+                //   measureControl.addTo(mymap);
 
                 mymap.on('draw:created', function(e){
                   switch (e.layerType) {
